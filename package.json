@@ -1,0 +1,43 @@
+{
+  "name": "bytemd-plugin-vim",
+  "version": "1.0.0",
+  "description": "ByteMD plugin to vim key map",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "vite build"
+  },
+  "type": "module",
+  "keywords": ["markdown", "bytemd", "vim"],
+  "author": "Vin Zhang",
+  "license": "ISC",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "jsdelivr": "./dist/index.umd.js",
+  "unpkg": "./dist/index.umd.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/codemirror": "^5.60.7",
+    "@types/lodash-es": "^4.17.7",
+    "bytemd": "^1.5.0",
+    "codemirror-ssr": "^0.65.0",
+    "lodash-es": "^4.17.21",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.3",
+    "vite": "^4.2.1"
+  },
+  "peerDependencies": {
+    "bytemd": "^1.5.0",
+    "codemirror-ssr": "^0.65.0"
+  }
+}
